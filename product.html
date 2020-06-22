@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+
+
+
+    <meta charset="utf-8">
+
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="product.css">
+
+
+
+</head>
+
+
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+
+
+
+
+
+
+
+    li,
+
+    a,
+
+    header footer {
+
+        font-family: "Montserrat";
+
+        font-weight: 500;
+
+        font-size: 13px;
+
+        text-decoration: none;
+
+        color: white;
+
+
+
+
+
+    }
+
+
+
+
+
+    .btn-primary.custom-btn {
+        background-color: #091f36;
+        border-color: #fff;
+        border-radius: 88px;
+        width: 150px;
+        color: #FFFFFF;
+    }
+
+    .btn-primary.custom-btn:hover {
+        background-color: #091f36;
+        border-color: #fff;
+        border-radius: 88px;
+        width: 150px;
+        color: #FFFFFF;
+    }
+
+    .btn-primary.custom-btn:focus {
+        background-color: #091f36;
+        border-color: #fff;
+        border-radius: 88px;
+        width: 150px;
+        color: #FFFFFF;
+    }
+
+    .addressIcon {
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .addressTitle {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 43px;
+        color: #000000;
+
+    }
+
+    .addressTitleMobile {
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+
+    }
+
+    .addressBody {
+        color: #000000;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+
+    .iframeStyle iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .page-footer {
+        margin-bottom: 10px;
+    }
+
+    .page-footer {
+        margin-bottom: 10px;
+    }
+
+
+    @media screen and (max-width: 780px) {
+        input {
+            margin: 0 0 20px 0;
+        }
+
+        .get_in_touch {
+            margin-top: 220px;
+        }
+    }
+</style>
+
+        <script>
+            function totalAmount() {
+                // Selecting the input element and get its value 
+                var inputVal = document.getElementById("amount").textContent;
+
+
+
+
+                var e = document.getElementById("quantity");
+                var strUser = e.options[e.selectedIndex].value;
+
+                var amount = inputVal * strUser;
+
+                document.getElementById("totalAmount").textContent = "$ " + amount;
+
+
+                // Displaying the value
+
+            }
+
+        </script>
+     
+
+</head>
+
+
+
+<body>
+
+    <div class="desktop-container">
+
+        <div class="page-header">
+
+            <nav class="navbar navbar-light text-white" style="background-color: #040404;">
+
+                <a class="navbar-brand text-white "  href="#"> Zuri Fashion </a>
+
+                <ul class="nav justify-content-center">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active"  href="#">Home</a>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"  href="#">Women</a>
+
+                    </li>
+                                        <li class="nav-item">
+                                        
+                                            <a class="nav-link"  href="#">Men</a>
+                                        
+                                        </li>
+                                        <li class="nav-item">
+                                        
+                                            <a class="nav-link"  href="#">Collections</a>
+                                        
+                                        </li>
+                                                            <li class="nav-item">
+                                                            
+                                                                <a class="nav-link"  href="#">Sales</a>
+                                                            
+                                                            </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">Accessories</a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#">About</a>
+
+                    </li>
+
+                </ul>
+
+
+
+
+
+
+
+                <ul class="nav justify-content-end">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"><i class="fa fa-search"></i></a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"><i class="fa fa-shopping-cart"></i></a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <button class=" btn btn-primary btn-sm nav-link">Log in</button>
+
+</li>
+
+                </ul>
+
+        </div>
+
+        </nav>
+
+
+<!-- Product page -->
+            <div class="container desktop">
+                <div class="row my-5  pb-5">
+                    <div class="col-lg">
+
+        <div class="container-fluid">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body" style="height: auto;">
+                                <p class="card-title">WOMEN'S SHOES </p>
+                                <p class="card-text addressTitle"> STELLA SUEDE SHOE </p>
+                                <i class="fa fa-star goldColor" aria-hidden="true"></i><i class="fa fa-star goldColor"
+                                    aria-hidden="true"></i><i class="fa fa-star goldColor" aria-hidden="true"></i><i
+                                    class="fa fa-star-half-o goldColor" aria-hidden="true"></i><i
+                                    class="fa fa-star-half-o goldColor" aria-hidden="true"></i>
+                                <span style="
+                          font-style: normal;
+                          font-weight: normal;
+                          font-size: 19.9325px;
+                          letter-spacing: 0.1em;
+                        ">
+                                    (3.5 - 10 reviews)
+                                </span>
+                                <p style="
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 29.8987px;
+                          line-height: 36px;
+                          letter-spacing: 0.1em;
+                        ">
+                                    $<span id="amount">500</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card" class="justify-content-center">
+
+                            <form class="p-5">
+                                <div class="form-group row">
+                                    <label for="color" class="col-sm-4 col-form-label">Color</label>
+                                    <div class="col-sm-6">
+                                          
+                                                <select class="form-control" >
+                                                    <option value="3"><span style="font-size: 100px;">&#9899;</span>
+                                                        Black</option>
+                                                    <option value="5 "><span style="font-size: 100px;">&#128308;</span>
+                                                        Red</option>
+                                                    <option value="5 "><span style="font-size: 100px; color: red;">&#9899;</span>
+                                                        Green</option>
+                                                </select>
+                                  
+                                </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="size" class="col-sm-4 col-form-label">Size</label>
+                                    <div class="col-sm-6">
+                                    <select class="form-control">
+                                        <option value="3">39</option>
+                                        <option value="5 ">40</option>
+                                    </select>
+                                    
+                                    <a href="#" style="color: #000000" class="float-right">SIZE GUIDE</a>
+                                    </div>
+                                </div>
+                                    <div class="form-group row">
+                                        <label for="quantity" class="col-sm-4 col-form-label">Quantity</label>
+                                        <div class="col-sm-6">
+                                            <select name="quantity" class="custom-select" id="quantity" onchange="totalAmount();">
+                                                <option selected value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                            </form>
+                                                       
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <span class="card-title" id="totalAmount">$ 500</span>
+                                    </div>
+    
+                                    <div class="col-lg-6" class="float-right">
+                                        <a href="#" class="btn btn-primary" style="background: #5230DB;
+                                    border-radius: 8.6286px">Add to Cart</a>
+                                    <span class="pl-5">
+                                        <i id="favBtn" onclick="myFunction(this)" class="fa fa-heart-o" style=" font-size: 20px;color: #fcda2b;" aria-hidden="true"></i>
+                                    </span>
+                                        
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                                    <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+                                        <!--Slides-->
+                                        <div class="carousel-inner w-75 h-100" style="margin-left: auto; margin-right: auto " role="listbox">
+                                            <div class="carousel-item active">
+                                                <img class="img-fluid d-block w-100" src="images/shoe1.jpg" alt="First slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid d-block w-100" src="images/shoe2.jpg" alt="Second slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid d-block w-100" src="images/shoe3.jpg" alt="Third slide">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid d-block w-100" src="images/shoe4.jpg" alt="Fourth slide">
+                                            </div>
+                                        </div>
+                                        <!--/.Slides-->
+                                        <!--Controls-->
+                                        <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                        </div>
+                                        <!--/.Controls-->
+
+                <div class="row pt-3">
+                    <div class="col " class="carousel-indicators ">
+                        <li data-target="#carousel-thumb" data-slide-to="0" class="active ">
+                        <img class="img-fluid img-thumbnail" src="images/shoe1.jpg" alt="thumbnailOne" />
+                        </li>
+                    </div>
+                    <div class="col " class="carousel-indicators">
+                        <li data-target="#carousel-thumb" data-slide-to="1">
+                            <img class="img-fluid img-thumbnail" src="images/shoe2.jpg" alt="thumbnailTwo" />
+                            </li>
+                    </div>
+                    <div class="col " class="carousel-indicators ">
+                        <li data-target="#carousel-thumb" data-slide-to="2">
+                        <img  class="img-fluid img-thumbnail " src="images/shoe3.jpg" alt="thumbnailThree" />
+                    </div>
+                                        <div class="col " class="carousel-indicators w-25">
+                                            <li data-target="#carousel-thumb" data-slide-to="3">
+                        <img  class="img-fluid img-thumbnail " src="images/shoe4.jpg" alt="thumbnailFour" />
+                    </div>
+                </div>
+                                  
+
+                    </div>
+                </div>
+                <div class="row justify-content-center pt-5" >
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="text-center addressTitleMobile">YOU MAY ALSO LIKE</p>
+                                <div class="row text-center">
+                                    <div class="col">
+                                        <img src="images/funkeleathershoe.jpg" alt="..." class="img-thumbnail" />
+                                        <p class="addressIcon">FUNKE LEATHER SHOE</p>
+                                        <p > $700 </p>
+                                    </div>
+                                    <div class="col">
+                                        <img src="images/doraclothshoe.jpg" alt="..." class="img-thumbnail" />
+                                        <p class="addressIcon">DORA CLOTH SHOE</p>
+                                        <p > $500</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src="images/adeleshoe.jpg" alt="..." class="img-thumbnail" />
+                                        <p class="addressIcon">ADELE LEATHER BOOTS</p>
+                                        <p>$400</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src="images/maryshoe.jpg" alt="..." class="img-thumbnail" />
+                                        <p class="addressIcon"><b>MARY LEATHER SHOE</p>
+                                        <p>$400</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row pt-5">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <nav class="navbar navbar-expand-lg navbar-dark reviewHeader">
+    
+                                <a href="#" class="navbar-brand">
+                                    <span class="d-lg-inline-block d-none size25fontSize colorWhite">Reviewed by 10
+                                        Customers</span>
+                                    <span class=" d-inline-block d-lg-none">Reviews(10)</span>
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+    
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav ml-auto">
+                                        <form class="form-inline my-2 my-lg-0">
+                                            <!-- <p class="form-control mr-sm-2"><a class="nav-item nav-link active" href="#">Sort By:</a></p> -->
+                                            <p class="size15fontSize colorWhite">SORT BY:</p>
+                                            <select class="form-control mr-sm-2">
+                                                <option>Most Recent</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </div>
+                            </nav>
+    
+                        </div>
+                        <div class="card-body" style="background: rgba(0, 0, 0, 0.01);">
+                            <div class="block">
+                                <div class="row">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-10">
+                                                <p class="card-title size25fontSize colorBlack">
+                                                    OVERALL RATING
+                                                </p>
+    
+                                                <i class="fa fa-star " style="color: #fcda2b;" aria-hidden="true"></i><i
+                                                    class="fa fa-star" style="color: #fcda2b;" aria-hidden="true"></i><i
+                                                    class="fa fa-star" style="color: #fcda2b;" aria-hidden="true"></i><i
+                                                    class="fa fa-star-half-o" style="color: #fcda2b;"
+                                                    aria-hidden="true"></i><i class="fa fa-star-half-o"
+                                                    style="color: #fcda2b;" aria-hidden="true"></i>
+                                                <span class="size18FontSize">
+                                                    (3.5 - 10 reviews)
+                                                </span>
+                                            </div>
+                                            <div class="col-sm-2">
+                                                <a href="#" class="btn btn-primary " style="background: #FFFFFF; border: 1px solid #000000; box-sizing: border-box;color: #5230DB;" data-toggle="modal" data-target="#myModal">
+                                                    Write a review</a>
+                                                <div class="container">
+    
+                                                    <!-- The Modal -->
+                                                    <div class="modal fade" id="myModal">
+                                                        <div class="modal-dialog">
+                                                            <div class="modal-content">
+    
+                                                                <!-- Modal Header -->
+                                                                <div class="modal-header">
+                                                                    <div class="container text-center">
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <p class="tex-center" style="font-style: normal;
+                                                                                        font-weight: bold;
+                                                                                        font-size: 25px;
+                                                                                        line-height: 30px;
+                                                                                        color: #000000;">Rate your
+                                                                                    experience</p>
+                                                                                <hr
+                                                                                    style="width: 260px;border: 2px solid #5230DB;" />
+    
+                                                                                <div class="col text-center"
+                                                                                    style="color: rgba(196, 196, 196, 0.6);">
+                                                                                    <!-- <i id="test" onclick="myReviewFunction(this)" class="fa fa-heart-o" style="color: #fcda2b;" aria-hidden="true"></i> -->
+    
+                                                                                    <i onclick="myReviewFunction(this)"
+                                                                                        class="fa fa-star-o"
+                                                                                        style="font-size: 50px; color: #fcda2b;"
+                                                                                        aria-hidden="true"
+                                                                                        id="rateIconOne"></i>
+                                                                                    <i onclick="myReviewFunction(this)"
+                                                                                        class="fa fa-star-o"
+                                                                                        style="font-size: 50px;  color: #fcda2b;"
+                                                                                        aria-hidden="true"
+                                                                                        id="rateIconTwo"></i>
+                                                                                    <i onclick="myReviewFunction(this)"
+                                                                                        class="fa fa-star-o"
+                                                                                        style="font-size: 50px;  color: #fcda2b;"
+                                                                                        aria-hidden="true"
+                                                                                        id="rateIconThree"></i>
+                                                                                    <i onclick="myReviewFunction(this)"
+                                                                                        class="fa fa-star-o"
+                                                                                        style="font-size: 50px;  color: #fcda2b;"
+                                                                                        aria-hidden="true"
+                                                                                        id="rateIconFour"></i>
+                                                                                    <i onclick="myReviewFunction(this)"
+                                                                                        class="fa fa-star-o"
+                                                                                        style="font-size: 50px;  color: #fcda2b;"
+                                                                                        aria-hidden="true"
+                                                                                        id="rateIconFive"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="button" class="close"
+                                                                        data-dismiss="modal">&times;</button>
+                                                                </div>
+                                                                <div class="clearfix"></div>
+                                                                <!-- Modal body -->
+                                                                <div class="modal-body" id="modalBody">
+                                                                    <form action="">
+                                                                        <div class="form-group">
+                                                                            <label for="heading"
+                                                                                class="sr-only">Heading:</label>
+                                                                            <input type="text" class="form-control"
+                                                                                placeholder="Write a heading" id="heading">
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label for="experience"
+                                                                                class="sr-only">Experience</label>
+                                                                            <textarea class="form-control" id="experience"
+                                                                                rows="10"
+                                                                                placeholder="Tell us about your experience"></textarea>
+                                                                            </textarea>
+                                                                        </div>
+                                                                        <div class="form-group">
+    
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col text-center">
+                                                                                <button type="button"  onclick="submitBtn()"
+                                                                                    class="btn btn-primary"
+                                                                                    style="background: #5230DB;border: 1px solid #000000;box-sizing: border-box;"
+                                                                                    data-dismiss="modal">Submit</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </form>
+    
+                                                                </div>
+    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+    
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p id="reviewCards"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+   
+
+<!-- Footer -->
+
+
+        <footer class="page-footer" style="background-color: #3C3C3C;">
+           <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                 
+
+
+    <div class="container text-md-left text center">
+    
+        <!-- Grid row -->
+        <div class="row">
+    
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto text-white">
+                <br>
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Payment Method</h5><br>
+                <ul class="list-unstyled">
+                    <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor <br>incididunt
+                        ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud </p><br>
+    
+                    <i class="fa fa-credit-card"></i>
+                    <i class="fa fa-cc-visa"></i>
+                    <i class="fa fa-cc-mastercard"></i>
+                    <i class="fa fa-cc-paypal"></i><br><br>
+    
+                    <p>Secure online payment</p>
+                </ul>
+            </div>
+            <br>
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto" style="padding: 2px">
+    
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">Shopping Guide</h5><br>
+    
+                <ul class="list-unstyled">
+                    <li><a href="#!">FAQ</a></li>
+                    <li><a href="#!">Shipment</a></li>
+                    <li><a href="#!">Returns</a></li>
+                    <li><a href="#!">Gift Cards</a></li>
+                    <li><a href="#!">Clothing Line</a></li>
+                    <li><a href="#!">Purchase Conditions</a></li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-4 mx-auto">
+                <!-- Links -->
+                <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-white">Company</h5><br>
+    
+                <ul class="list-unstyled">
+                    <li><a href="#!">About Us</a></li>
+                    <li><a href="#!">Press</a></li>
+                    <li><a href="#!">Our Team Us</a></li>
+                    <li><a href="#!">Offices</a></li>
+                    <li><a href="#!">Affiliates</a></li>
+                    <li><a href="#!">Give Away</a></li>
+                    <li><a href="#!">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+
+
+        </footer>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="mobile-container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #000000;">
+            <div class="nav-item">
+                <div class="nav-button blue-btn12 no-pad-side navbar-toggler" style="color: #ffffff;" type="button" data-toggle="collapse"
+                    data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="nav-line text-white"></div>
+                    <div class="nav-line text-white"></div>
+                    <div class="nav-line text-white"></div>
+                </div>
+            </div>
+            <div class="head-container">
+                <a class="navbar-brand head" style="color: white;" href="#">Zuri Fashion</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="mobile-nav-wrapper">
+                    <ul class="navbar-nav main-links">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white" href="#">Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Women</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Men</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Collections</a>
+                        </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link text-white" href="#">Sales</a>
+                                                </li>
+                                                                        <li class="nav-item">
+                                                                            <a class="nav-link text-white" href="#">Accessories</a>
+                                                                        </li>
+                    </ul>
+                    <hr class="divider">
+                    <div class="socials nav-socials no-pad-side">
+                        <div class="social  col-sm-3">
+                            <a href=""><i class="fa fa-sign-in fa-2x"></i></a>
+                        </div>
+                        <div class="social col-sm-3">
+                            <a href="#"><i class="fa fa-search fa-2x"></i></a>
+                        </div>
+                        <div class="social col-sm-3">
+                            <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    <div class="container-fluid add-pad" style="margin-top: 56px;">
+        <div class="row">
+                    <div id="carouselControls" class="carousel slide justify-content-center" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+<div class="img-container no-pad-side col-sm-12">
+    <div class="img-cover">
+        <img class="image" src="images/shoe1.jpg" alt="" srcset="">
+    </div>
+</div>                            </div>
+                            <div class="carousel-item">
+<div class="img-container no-pad-side col-sm-12">
+    <div class="img-cover">
+        <img class="image" src="images/shoe1.jpg" alt="" srcset="">
+    </div>
+</div>                            </div>
+                            <div class="img-fluid carousel-item">
+<div class="img-container no-pad-side col-sm-12">
+    <div class="img-cover">
+        <img class="image" src="images/shoe1.jpg" alt="" srcset="">
+    </div>
+</div>                            </div>
+                        </div>
+                    </div>
+        </div>
+               
+                    <div class="row">
+                       
+                        <p class="card-text"> STELLA SUEDE SHOE </p>
+                    </div>
+                    <div class="row">
+                        <i class="fa fa-star goldColor" aria-hidden="true"></i><i class="fa fa-star goldColor"
+                            aria-hidden="true"></i><i class="fa fa-star goldColor" aria-hidden="true"></i><i
+                            class="fa fa-star-half-o goldColor" aria-hidden="true"></i><i
+                            class="fa fa-star-half-o goldColor" aria-hidden="true"></i>
+                        <span >
+                            (3.5 - 10 reviews)
+                        </span>
+                       
+                        </div>
+                   
+<div class="row">
+                        <p  style="
+                          font-style: normal;
+                          font-weight: 600;
+                          font-size: 29.8987px;
+                          line-height: 36px;
+                          letter-spacing: 0.1em;
+                        ">
+                        
+                            $<span id="amount">500</span>
+                        </p>
+</div>
+        <hr />
+          
+          
+                <div class="row">
+
+                    <form class="p-5">
+                        <div class="form-group">
+                            <div class=" row">
+                            <label for="color" class="col-form-label">Color</label>
+                                <select class="form-control">
+                                    <option value="3"><span style="font-size: 100px;">&#9899;</span>
+                                        Black</option>
+                                    <option value="5 "><span style="font-size: 100px;">&#128308;</span>
+                                        Red</option>
+                                    <option value="5 "><span style="font-size: 100px; color: red;">&#9899;</span>
+                                        Green</option>
+                                </select>
+
+                          </div> 
+                        </div>
+                        <div class="form-group row">
+                            <label for="size" class="col-sm-4 col-form-label">Size</label>
+                            <div class="col-sm-6">
+                                <select class="form-control">
+                                    <option value="3">39</option>
+                                    <option value="5 ">40</option>
+                                </select>
+
+                                <a href="#" style="color: #000000" class="float-right">SIZE GUIDE</a>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="quantity" class="col-sm-4 col-form-label">Quantity</label>
+                            <div class="col-sm-6">
+                                <select name="quantity" class="custom-select" id="quantity" onchange="totalAmount();">
+                                    <option selected value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+          <hr/>    
+                        <div class="row">
+                           
+                                <span class="card-title  pr-3" id="totalAmount">$ 500</span>
+                           
+<div class="float-right">
+                                <a href="#" class="btn btn-primary pr-5" style="background: #5230DB;
+                                    border-radius: 8.6286px">Add to Cart</a>
+                                    
+                                <span class="pl-5">
+                                    <i id="favBtn" onclick="myFunction(this)" class="fa fa-heart-o"
+                                        style=" font-size: 20px;color: #fcda2b;" aria-hidden="true"></i>
+                                </span>
+</div>
+                        </div>
+
+            
+
+  <hr/>        
+       
+        <div class="row justify-content-center">
+                        <p class="text-center">YOU MAY ALSO LIKE</p>
+                        <div class="row text-center">
+                            <div class="col">
+                                <img src="images/funkeleathershoe.jpg" alt="..." class="img-thumbnail" />
+                                <p>FUNKE LEATHER SHOE</p>
+                                <p> $700 </p>
+                            </div>
+                            <div class="col">
+                                <img src="images/doraclothshoe.jpg" alt="..." class="img-thumbnail" />
+                                <p>DORA CLOTH SHOE</p>
+                                <p> $500</p>
+                            </div>
+                            <div class="col">
+                                <img src="images/adeleshoe.jpg" alt="..." class="img-thumbnail" />
+                                <p>ADELE LEATHER BOOTS</p>
+                                <p>$400</p>
+                            </div>
+                        </div>
+          
+        </div>
+
+        <div class="row pt-3">
+            <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark reviewHeader">
+                    <div class="row">
+
+                        <a href="#" class="navbar-brand pr-4">
+                            <span class="d-lg-inline-block d-none size25fontSize colorWhite">Reviewed by 10
+                                Customers</span>
+                            <span class=" d-inline-block d-lg-none">Reviews(10)</span>
+                        </a>
+                        <div class="pl-5 float">
+                        <button class="navbar-toggler " type="button" data-toggle="collapse"
+                            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            </div>
+                    </button>
+                    </div>
+
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav ml-auto">
+                                <form class="form-inline my-2 my-lg-0">
+                                    <!-- <p class="form-control mr-sm-2"><a class="nav-item nav-link active" href="#">Sort By:</a></p> -->
+                                    <p class="size15fontSize colorWhite">SORT BY:</p>
+                                    <select class="form-control mr-sm-2">
+                                        <option>Most Recent</option>
+                                    </select>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+
+
+                                <div class="row" style="background: rgba(0, 0, 0, 0.01);">
+                                    <span class="float-left">
+                                        <p class="card-title">
+                                            OVERALL RATING
+                                       <br/>
+                                        <i class="fa fa-star " style="color: #fcda2b;" aria-hidden="true"></i><i
+                                            class="fa fa-star" style="color: #fcda2b;" aria-hidden="true"></i><i
+                                            class="fa fa-star" style="color: #fcda2b;" aria-hidden="true"></i><i
+                                            class="fa fa-star-half-o" style="color: #fcda2b;" aria-hidden="true"></i><i
+                                            class="fa fa-star-half-o" style="color: #fcda2b;" aria-hidden="true"></i>
+                                        <span class="size18FontSize">
+                                            (3.5 - 10 reviews)
+                                        </span>
+                                        </span>
+                                    </p class="float-right">
+                                        <a href="#" class="btn btn-primary "
+                                            style="background: #FFFFFF; border: 1px solid #000000; box-sizing: border-box;color: #5230DB;"
+                                            data-toggle="modal" data-target="#myModal">
+                                            Write a review</a>
+                                        <div class=".desktop-container">
+
+                                            <!-- The Modal -->
+                                            <div class="modal fade" id="myModal">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <!-- Modal Header -->
+                                                        <div class="modal-header">
+                                                            <div class="container text-center">
+                                                                <div class="row">
+                                                                    <div class="col">
+                                                                        <p class="tex-center" style="font-style: normal;
+                                                                                        font-weight: bold;
+                                                                                        font-size: 25px;
+                                                                                        line-height: 30px;
+                                                                                        color: #000000;">Rate your
+                                                                            experience</p>
+                                                                        <hr
+                                                                            style="width: 260px;border: 2px solid #5230DB;" />
+
+                                                                        <div class="col text-center"
+                                                                            style="color: rgba(196, 196, 196, 0.6);">
+                                                                            <!-- <i id="test" onclick="myReviewFunction(this)" class="fa fa-heart-o" style="color: #fcda2b;" aria-hidden="true"></i> -->
+
+                                                                            <i onclick="myReviewFunction(this)"
+                                                                                class="fa fa-star-o"
+                                                                                style="font-size: 50px; color: #fcda2b;"
+                                                                                aria-hidden="true" id="rateIconOne"></i>
+                                                                            <i onclick="myReviewFunction(this)"
+                                                                                class="fa fa-star-o"
+                                                                                style="font-size: 50px;  color: #fcda2b;"
+                                                                                aria-hidden="true" id="rateIconTwo"></i>
+                                                                            <i onclick="myReviewFunction(this)"
+                                                                                class="fa fa-star-o"
+                                                                                style="font-size: 50px;  color: #fcda2b;"
+                                                                                aria-hidden="true"
+                                                                                id="rateIconThree"></i>
+                                                                            <i onclick="myReviewFunction(this)"
+                                                                                class="fa fa-star-o"
+                                                                                style="font-size: 50px;  color: #fcda2b;"
+                                                                                aria-hidden="true"
+                                                                                id="rateIconFour"></i>
+                                                                            <i onclick="myReviewFunction(this)"
+                                                                                class="fa fa-star-o"
+                                                                                style="font-size: 50px;  color: #fcda2b;"
+                                                                                aria-hidden="true"
+                                                                                id="rateIconFive"></i>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="close"
+                                                                data-dismiss="modal">&times;</button>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                        <!-- Modal body -->
+                                                        <div class="modal-body" id="modalBody">
+                                                            <form action="">
+                                                                <div class="form-group">
+                                                                    <label for="heading"
+                                                                        class="sr-only">Heading:</label>
+                                                                    <input type="text" class="form-control"
+                                                                        placeholder="Write a heading" id="heading">
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="experience"
+                                                                        class="sr-only">Experience</label>
+                                                                    <textarea class="form-control" id="experience"
+                                                                        rows="10"
+                                                                        placeholder="Tell us about your experience"></textarea>
+                                                                    </textarea>
+                                                                </div>
+                                                                <div class="form-group">
+
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col text-center">
+                                                                        <button type="button" onclick="submitBtn()"
+                                                                            class="btn btn-primary"
+                                                                            style="background: #5230DB;border: 1px solid #000000;box-sizing: border-box;"
+                                                                            data-dismiss="modal">Submit</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                </div>
+                       
+
+                <p id="reviewCards"></p>
+            </div>
+        </div>
+    </div>
+   
+
+
+       
+
+            <footer id="footer" class="text-white" style="background-color: #3C3C3C;">
+                <div class="container">
+                    <div class="subscriber col-sm-12">
+                        <div class="brnd-header col-sm-12">
+                            <h2 class="text-white">
+                               Zuri Fashion
+                            </h2>
+                        </div>
+<p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud </p>
+
+    <i class="fa fa-credit-card  fa-2x"></i>
+    <i class="fa fa-cc-visa fa-2x pl-3"></i>
+    <i class="fa fa-cc-mastercard fa-2x pl-3"></i>
+    <i class="fa fa-cc-paypal fa-2x pl-3"></i><br><br>
+                        <p>Secure online payment</p>
+
+            
+                        <div class="footer-elm no-pad-side col-sm-12">
+                            <h3 class="text-white">Shopping Guides</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="#!">FAQ</a></li>
+                                <li><a href="#!">Shipment</a></li>
+                                <li><a href="#!">Returns</a></li>
+                                <li><a href="#!">Gift Cards</a></li>
+                                <li><a href="#!">Clothing Line</a></li>
+                                <li><a href="#!">Purchase Conditions</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-elm no-pad-side col-sm-12">
+                            <h3 class="text-white">Company</h3>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#!">About Us</a></li>
+                                            <li><a href="#!">Press</a></li>
+                                            <li><a href="#!">Our Team Us</a></li>
+                                            <li><a href="#!">Offices</a></li>
+                                            <li><a href="#!">Affiliates</a></li>
+                                            <li><a href="#!">Give Away</a></li>
+                                            <li><a href="#!">Contact</a></li>
+                                        </ul>
+                        </div>
+                        <div class="socials no-pad-side">
+                            <div class="social  col-sm-4">
+                                <a href=""><i class="fa fa-sign-in fa-2x text-white"></i></a>
+                            </div>
+                            <div class="social col-sm-4">
+                                <a href="#"><i class="fa fa-shopping-cart fa-2x text-white"></i></a>
+                            </div>
+                            <div class="social col-sm-4">
+                                <a href="#"><i class="fa fa-search fa-2x text-white"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+</div>
+    </div>
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+        //get the value of icon
+        var event = document.getElementById("favBtn");
+        // var e = document.getElementsByClassName("fa fa-star-o fa-3x clickReview goldColor");
+
+        function myFunction(event) {
+            console.log(event)
+
+            //compare the class of the icon with fa-heart-o
+            if (event.classList[1] === "fa-heart-o") {
+                //remove the class fa-heart-o
+                event.classList.remove("fa-heart-o");
+                //add class fa-heart
+                event.classList.add("fa-heart");
+                console.log("hey 1")
+            }
+            else {
+                //add class fa-heart-o
+                event.classList.add("fa-heart-o");
+                //remove class fa-heart
+                event.classList.remove("fa-heart");
+            }
+        }
+
+
+        var e = document.getElementById("rateIconOne");
+
+        var timesClicked = 0;
+        function myReviewFunction(e) {
+            if (e.classList[1] === "fa-star-o") {
+
+                e.getAttribute('id');
+
+                //remove the class fa-star-o
+                e.classList.remove("fa-star-o");
+                //add class fa-star
+                e.classList.add("fa-star");
+            }
+            else {
+                //add class fa-star-o
+                e.classList.add("fa-star-o");
+
+                //remove class fa-star
+                e.classList.remove("fa-star");
+                console.log("it added " + e.classList)
+
+            }
+
+
+            clickCount = parseInt(clickCount) + parseInt(1);
+            console.log("count: " + clickCount)
+        }
+
+
+    </script>
+
+    <script>
+        var clickCount = 0;
+        var reviewData = [
+            { name: "Christianah Davies", location: "Chicago, USA", date: "February, 2020", heading: "VERY COMFORTABLE", experience: "I bought two pairs of shoes from this onlinestore.The experience was incident free and the delivery was fast.The deals which I used to getthese shoes were great and the quality of the shoes were very good.I enjoy shopping here" },
+            { name: "Robert Lewis", location: "Florida, USA", date: "February, 2020", heading: "VERY COMFORTABLE", experience: "I bought two pairs of shoes from this onlinestore.The experience was incident free and the delivery was fast.The deals which I used to getthese shoes were great and the quality of the shoes were very good.I enjoy shopping here" },
+        ]
+        // var review = {}  
+
+        var data = {
+            heading: "",
+            experience: " ",
+            name: "John Doe",
+            location: "Washington, DC",
+            date: "January,2020"
+        };
+        loadData(reviewData);
+function loadData(reviewData)
+{
+    
+    const container = document.getElementById("reviewCards");
+    reviewData.forEach((reviewData) => {
+
+        const content = `  
+                                       <div
+                                           class="card-body"
+                                           style="background-color: rgba(0, 0, 0, 0.08);"             
+                      <div class="block">
+                                          <div class="row">
+                                            <div class="card-body">
+                                              <div class="row">
+                                                <div class="col-sm-10">
+                                                  <div
+                                                    class="block"
+                                                    style="padding-left: 0px; padding-right: 0px;"
+                                                  >
+                                                    <div class="row">
+                                                      <div class="card-body">
+                                                        <div class="row">
+                                                          <div class="col-sm-10">
+                                                            <i
+                                                              class="fa fa-star"
+                                                              style="color: #fcda2b;"
+                                                              aria-hidden="true" 
+                                                            ></i
+                                                            ><i
+                                                              class="fa fa-star"
+                                                              style="color: #fcda2b;"
+                                                              aria-hidden="true"
+                                                            ></i
+                                                            ><i
+                                                              class="fa fa-star"
+                                                              style="color: #fcda2b;"
+                                                              aria-hidden="true"
+                                                            ></i
+                                                            ><i
+                                                              class="fa fa-star-half-o"
+                                                              style="color: #fcda2b;"
+                                                              aria-hidden="true"
+                                                            ></i
+                                                            ><i
+                                                              class="fa fa-star-half-o"
+                                                              style="color: #fcda2b;"
+                                                              aria-hidden="true"
+                                                            ></i>
+                                                            <span class="size24fontSize colorBlack" id="heading">
+                                                               ${reviewData.heading}
+                                                            </span>
+                                                          </div>
+                                                          <div class="col-sm-2">
+                                                            <p class="btn btn-default" id="date">
+                                                             ${reviewData.date}
+                                                            </p>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                      
+                                                  <p id="experienceTest">
+                                                  ${reviewData.experience}
+                                                  </p>
+                                                </div>
+                                                <div class="col-sm-2 text-center">
+                                                  <img
+                                                    src="images/face1.jpg" style="border-radius: 50%;"
+                                                    class="img img-circle img-fluid"
+                                                  />
+                                                  <br /><br />
+                                                  <p
+                                                    style="
+                                                      font-family: Montserrat;
+                                                      font-style: normal;
+                                                      font-weight: bold;
+                                                      font-size: 20px;
+                                                      line-height: 24px;
+                                                      color: #000000;
+                                                    "
+                                                  >
+                                                    <b id="name">${reviewData.name}</b>
+                                                  </p>
+                                                  <span id="location">${reviewData.location}</span>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                        </div>
+                      `
+        container.innerHTML += content;
+
+    })
+
+    
+
+}
+        function submitBtn() {
+            data.ratings = clickCount;
+            data.heading = $("#modalBody #heading").val().toUpperCase();
+            data.experience = $("#modalBody #experience").val().trim()
+
+            // ('#reviewCards').children('input').val('');
+            // var form = document.getElementById("reviewCards");
+            // form.reset();
+
+           
+            // container.innerHTML += data;
+
+
+//  reviewData.push(data);
+// console.log(reviewData )
+
+return data
+
+        }
+
+        console.log(data )
+
+                //  reviewData.push(data);
+
+                  console.log("third " + reviewData);
+
+
+    </script>
+
+</body>
+
+
+</html>

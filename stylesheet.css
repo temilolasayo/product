@@ -1,0 +1,31 @@
+body{
+	font:Montserrat; 
+}
+.contain{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #5230db;
+}
+
+form{
+    display: inline-block;
+    vertical-align: top;
+}
+
+i{
+	font-size: 30px;
+	margin-right: 20px;
+}
+
+footer{
+	background-color: #3c3c3c;
+	color: #ffffff;
+	display: block;
+	padding-left: 20px;
+	text-align: center;
+}
+
+footer a{
+	color: #ffffff;
+}
